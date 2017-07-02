@@ -38,17 +38,17 @@ Puis taper cette commande pour récupèrer le projet et le lancer:
 $ git clone https://github.com/sebastienseptier/Myfirstapp
 $ npm start
 ```
-Un QR-code devrait s'afficher dans la console pour permettre à un téléphone d'accèder à l'application. 
+Un QR-code devrait s'afficher dans la console pour permettre à un téléphone d'accèder à l'application via 'Expo'. 
 
 ## Débugage ##
 
 React-native permet de ne pas devoir attendre 10min à chaque rebuild du projet, un moyen de voir directement le projet en marche est d'utiliser l'application mobile 'Expo' qui sert de client à notre serveur : [https://expo.io/](https://expo.io/).
-Chaque modification du code entraîne un rafraichissement direct sur le télépone, et cela fonctionne sur iOS et android.
+Chaque modification du code entraîne un rafraichissement direct sur le télépone (connecté sur le même réseau que le pc de développement), et cela fonctionne sur iOS et android.
 
 ## Documentation ##
 * Git : [https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
-* Commandes git : [https://gist.github.com/aquelito/8596717](https://gist.github.com/aquelito/8596717)
 * Node.js : [https://facebook.github.io/react-native/docs/getting-started.html](https://facebook.github.io/react-native/docs/getting-started.html)
+* Commandes d'utilisation de git : [https://gist.github.com/aquelito/8596717](https://gist.github.com/aquelito/8596717)
 * (Pour plus tard) Serveur de base de données pour l'application : [https://firebase.google.com/](https://firebase.google.com/)
 
 ## Commandes utiles ##
@@ -60,6 +60,7 @@ Pour créer un commit :
 ```
 //Si c'est la premiere fois, ajouter le projet cible :
 $ git remote add origin https://github.com/sebastienseptier/Myfirstapp.git
+//Puis,
 $ git add <nomDuFichier> 
 $ git commit -m "raisonDeLaNouvelleMiseAJour"
 $ git push origin master
